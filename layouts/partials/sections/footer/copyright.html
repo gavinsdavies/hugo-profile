@@ -1,22 +1,24 @@
 <div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
-            <div class="pb-2">
+            <!--<div class="pb-2">
                 <a href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">
                     <img alt="Footer logo" src="{{ .Site.Params.navbar.brandLogo | default .Site.Params.favicon }}"
                         height="40px" width="40px">
                 </a>
-            </div>
-            &copy; {{ now.Format "2006"}} {{ .Site.Params.copyright }} {{ .Site.Params.terms.copyright | default "All Rights Reserved" }}
+            </div>-->
+           
             <div class="text-secondary">
-                Made with
+                <a href="https://github.com/gavinsdavies/gavinsdavies.com">Made with
                 <span class="text-danger">
                     &#10084;
                 </span>
-                and
+		</a> &nbsp;&bull;&nbsp; &copy; {{ now.Format "2006"}} {{ .Site.Params.copyright }} {{ .Site.Params.terms.copyright | default "All Rights Reserved" }}</br>
+                <a href="https://gohugo.io">Hugo v0.115.1</a> powered </br>
+		Theme adapted from
                 <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
-                    title="Designed and developed by gurusabarish">
-                    Hugo Profile
+                   title="Designed and developed by gurusabarish">
+                  Hugo Profile
                 </a>
             </div>
         </div>

@@ -70,8 +70,18 @@
                                 {{ if .featuredLink.enable | default false }}
                                 <div class="py-2 featuredLink">
                                     <a class="p-2 px-4 btn btn-outline-primary btn-sm" href={{ .featuredLink.url | default "#" }} target="_blank">
-                                        {{ .featuredLink.name | default "Featured Link" }} 
+                                      {{ .featuredLink.name | default "Featured Link" }} 
                                     </a>
+				    {{ if .featuredLink2.enable | default false }}
+                                    <a class="p-2 px-4 btn btn-outline-primary btn-sm" href={{ .featuredLink2.url | default "#" }} target="_blank">
+                                        {{ .featuredLink2.name | default "Featured Link 2" }}
+                                    </a>
+                                    {{ end }}
+                                    {{ if .featuredLink3.enable | default false }}
+                                    <a class="p-2 px-4 btn btn-outline-primary btn-sm" href={{ .featuredLink3.url | default "#" }} target="_blank">
+                                        {{ .featuredLink3.name | default "Featured Link 3" }}
+                                    </a>
+                                    {{ end }}
                                 </div>
                                 {{ end }}
                             </div>

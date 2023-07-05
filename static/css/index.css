@@ -53,6 +53,7 @@
 
 header .navbar.animate {
     animation: fade-up 0.5s ease-in;
+    background-color: var(--background-color) !important;
 }
 
 
@@ -360,8 +361,8 @@ header .navbar.animate {
     left: 0px;
 }
 
-#experience .experience-container .tab-content .tab-pane .featuredLink a::after {
-    display: block;
+#experience .experience-container .tab-content .tab-pane .featuredLink .featuredLink2 .featuredLink3 a::after {
+    display: inline-block;
     width: auto;
     height: auto;
     bottom: 0em;
@@ -370,17 +371,17 @@ header .navbar.animate {
     opacity: 1;
 }
 
-#experience .experience-container .tab-content .tab-pane .featuredLink a.btn {
+#experience .experience-container .tab-content .tab-pane .featuredLink .featuredLink2 .featuredLink3 a.btn {
     border: 1px solid var(--primary-color);
     border-radius: .75rem;
     transition: none;
 }
 
-#experience .experience-container .tab-content .tab-pane .featuredLink a.btn:focus {
+#experience .experience-container .tab-content .tab-pane .featuredLink .featuredLink2 .featuredLink3 a.btn:focus {
     box-shadow: none;
 }
 
-#experience .experience-container .tab-content .tab-pane .featuredLink a.btn:hover {
+#experience .experience-container .tab-content .tab-pane .featuredLink .featuredLink2 .featuredLink3 a.btn:hover {
     color: var(--text-color) !important;
     opacity: 0.7;
 }
